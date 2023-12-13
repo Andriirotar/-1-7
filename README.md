@@ -28,7 +28,7 @@ int main() {
     }
     // б) перелік товарів для заданого найменування, вартість яких не перевищує зазначеної
     double maxPrice = 12.0;
-    std::cout << "\nТовари з назвою '" << desiredName << "' and price not exceeding " << maxPrice << ":\n";
+    std::cout << "\nТовари з назвою '" << desiredName << "' і ціною не більше " << maxPrice << ":\n";
     for (const auto& product : products) {
         if (product.name == desiredName && product.price <= maxPrice) {
             std::cout << product.name << ", " << product.manufacturer << ", " << product.price
